@@ -7,7 +7,7 @@ if __name__ == '__main__':
 else:
     log = logging.getLogger(__name__)
 a = requests.get('https://api.github.com/events')
-b = requests.post('https://httpbin.org/post', data = {'key':'value'})  
+next_response = requests.post('http://example.com/', cookies=response.cookies)
 log.info(request.get)
 log.info(request.post)
 
